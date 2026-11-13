@@ -1,0 +1,21 @@
+# Environnement virtuel
+.venv/
+venv/
+
+# Caches Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Sorties
+*.csv.tmp
+grilles.csv
+
+# Éditeurs / OS
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
