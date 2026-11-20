@@ -3,15 +3,15 @@
 Le cœur du logiciel s'utilise sans interface graphique. Exemple minimal :
 
 ```python
-from lotto_matrix.loader import load_draws
-from lotto_matrix.analysis import analyser
-from lotto_matrix.strategies import creer_strategie
-from lotto_matrix.backtest import backtest
+from lotto_euromillions_matrix.loader import load_draws
+from lotto_euromillions_matrix.analysis import analyser
+from lotto_euromillions_matrix.strategies import creer_strategie
+from lotto_euromillions_matrix.backtest import backtest
 ```
 
 ---
 
-## `lotto_matrix.loader`
+## `lotto_euromillions_matrix.loader`
 
 ### Constantes
 
@@ -66,7 +66,7 @@ print(rapport.date_min, rapport.date_max)
 
 ---
 
-## `lotto_matrix.analysis`
+## `lotto_euromillions_matrix.analysis`
 
 ### `class NumeroStat` (dataclass)
 
@@ -110,7 +110,7 @@ print([(s.numero, s.occurrences) for s in stats.boules_triees_par_frequence()[:5
 
 ---
 
-## `lotto_matrix.strategies`
+## `lotto_euromillions_matrix.strategies`
 
 ### `class Grid` (dataclass gelée)
 
@@ -150,7 +150,7 @@ Renvoie les poids **normalisés** (boules, étoiles), pour la visualisation.
 
 ```python
 import numpy as np
-from lotto_matrix.strategies import creer_strategie
+from lotto_euromillions_matrix.strategies import creer_strategie
 
 strategie = creer_strategie("Retard (froids)")
 grilles = strategie.generer(load_draws().tirages, n_grilles=3, rng=np.random.default_rng(1))
@@ -158,7 +158,7 @@ grilles = strategie.generer(load_draws().tirages, n_grilles=3, rng=np.random.def
 
 ---
 
-## `lotto_matrix.backtest`
+## `lotto_euromillions_matrix.backtest`
 
 ### Constantes
 
@@ -196,7 +196,7 @@ progression).
 
 ---
 
-## `lotto_matrix.gui`
+## `lotto_euromillions_matrix.gui`
 
 ### `run() -> int`
 

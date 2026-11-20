@@ -70,7 +70,7 @@ rencontré pour une clé est conservé ; les suivants sont comptés comme doublo
 ## Le résultat : `LoadReport`
 
 ```python
-from lotto_matrix.loader import load_draws
+from lotto_euromillions_matrix.loader import load_draws
 
 rapport = load_draws()
 print(rapport.resume())

@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import sys
 
-from lotto_matrix.gui import run
+from lotto_euromillions_matrix.gui import run
 
 if __name__ == "__main__":
     sys.exit(run())

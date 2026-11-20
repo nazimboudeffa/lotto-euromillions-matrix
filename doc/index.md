@@ -84,9 +84,9 @@ Sans activer l'environnement :
 ### Utilisation sans interface
 
 ```python
-from lotto_matrix.loader import load_draws
-from lotto_matrix.strategies import creer_strategie
-from lotto_matrix.backtest import backtest
+from lotto_euromillions_matrix.loader import load_draws
+from lotto_euromillions_matrix.strategies import creer_strategie
+from lotto_euromillions_matrix.backtest import backtest
 
 rapport = load_draws()
 print(rapport.resume())

@@ -29,7 +29,7 @@ lotto-matrix/
 ├── .gitignore
 ├── data/                       # historique EuroMillions (CSV fournis)
 ├── doc/                        # cette documentation
-└── lotto_matrix/
+└── lotto_euromillions_matrix/
     ├── __init__.py             # métadonnées du paquet (version)
     ├── loader.py               # chargement / fusion / dédoublonnage des CSV
     ├── analysis.py             # statistiques (fréquences, écarts, paires)

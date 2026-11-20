@@ -131,7 +131,7 @@ lotto-matrix/
 ├── .gitignore
 ├── data/                       # historique CSV (fourni)
 ├── doc/                        # documentation détaillée (index.md)
-└── lotto_matrix/
+└── lotto_euromillions_matrix/
     ├── loader.py               # chargement / fusion / dédoublonnage des CSV
     ├── analysis.py             # statistiques (fréquences, écarts, paires)
     ├── strategies.py           # les 7 stratégies de prédiction
@@ -146,10 +146,10 @@ lotto-matrix/
 ## Utilisation en Python (sans interface)
 
 ```python
-from lotto_matrix.loader import load_draws
-from lotto_matrix.analysis import analyser
-from lotto_matrix.strategies import creer_strategie
-from lotto_matrix.backtest import backtest
+from lotto_euromillions_matrix.loader import load_draws
+from lotto_euromillions_matrix.analysis import analyser
+from lotto_euromillions_matrix.strategies import creer_strategie
+from lotto_euromillions_matrix.backtest import backtest
 
 rapport = load_draws()
 print(rapport.resume())

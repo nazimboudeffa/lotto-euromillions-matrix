@@ -128,8 +128,8 @@ Avec la graine `0` sur l'historique complet :
 
 ```python
 import numpy as np
-from lotto_matrix.loader import load_draws
-from lotto_matrix.strategies import creer_strategie, noms_strategies, poids_pour_affichage
+from lotto_euromillions_matrix.loader import load_draws
+from lotto_euromillions_matrix.strategies import creer_strategie, noms_strategies, poids_pour_affichage
 
 tirages = load_draws().tirages
 rng = np.random.default_rng(42)
@@ -148,7 +148,7 @@ pb, pe = poids_pour_affichage(strategie, tirages)
 ## Ajouter une stratégie
 
 ```python
-# lotto_matrix/strategies.py
+# lotto_euromillions_matrix/strategies.py
 class MaStrategie(Strategy):
     nom = "Ma stratégie"
     description = "Explique ici l'idée en une phrase."

@@ -13,7 +13,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 ```
 
-### `ModuleNotFoundError: No module named 'lotto_matrix'`
+### `ModuleNotFoundError: No module named 'lotto_euromillions_matrix'`
 
 Vous lancez le logiciel depuis un autre dossier. Placez-vous à la racine du
 projet avant de lancer :
@@ -64,8 +64,8 @@ Oui, en filtrant la liste avant l'analyse :
 
 ```python
 from datetime import date
-from lotto_matrix.loader import load_draws
-from lotto_matrix.analysis import analyser
+from lotto_euromillions_matrix.loader import load_draws
+from lotto_euromillions_matrix.analysis import analyser
 
 tirages = [t for t in load_draws().tirages if t.date >= date(2020, 1, 1)]
 stats = analyser(tirages)
@@ -127,7 +127,7 @@ les descriptions de stratégies et la barre d'état.
 
 ### Comment citer/versionner le projet ?
 
-La version est exposée dans `lotto_matrix.__version__`.
+La version est exposée dans `lotto_euromillions_matrix.__version__`.
 
 ### Licence et responsabilité
 

@@ -106,8 +106,8 @@ réactive, barre de progression).
 ### En Python
 
 ```python
-from lotto_matrix.loader import load_draws
-from lotto_matrix.backtest import backtest, ESPERANCE_BOULES, ESPERANCE_ETOILES
+from lotto_euromillions_matrix.loader import load_draws
+from lotto_euromillions_matrix.backtest import backtest, ESPERANCE_BOULES, ESPERANCE_ETOILES
 
 tirages = load_draws().tirages
 resultat = backtest(
